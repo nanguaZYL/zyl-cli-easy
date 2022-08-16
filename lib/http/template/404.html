@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .notFound {
+            margin-top: 30px;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .code {
+            margin-right: 30px;
+            padding: 5px 0 5px 15px;
+            background-color: #f2f2f2;
+
+        }
+
+        .code::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -4px;
+            height: 100%;
+            border-left: 4px solid #00D2DF;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="notFound">
+        <div class="code">
+            <p>404 Not Found</p>
+            <p>文件路径: ${ path } 不存在</p>
+            <p>该文件不存在</p>
+        </div>
+
+    </div>
+    <script>
+        console.log(location.origin)
+    </script>
+</body>
+
+</html>
